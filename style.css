@@ -1,0 +1,188 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff8f2;
+    color: #333;
+  }
+  
+  header {
+    background: #ffb6b9;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Bookman, URW Bookman L, serif;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    background: #f76c6c;
+    padding: 0.6rem 1.2rem; /* немного больше */
+    border-radius: 10px;
+    margin-right: 10px; /* расстояние между кнопками */
+    font-size: 1.05rem; /* чуть-чуть больше шрифт */
+    font-family: Bookman, URW Bookman L, serif	;
+  }
+  
+  nav a-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .category-hero {
+  position: relative;
+  background: url('https://learn.logikaschool.com/uploads/student/5238120/68874ced7f1c1.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.category-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.category-hero h1 {
+  position: relative;
+  font-size: 3rem;
+  z-index: 1;
+  font-family: Bookman, URW Bookman L, serif;
+}
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 420px;
+  font-family: Bookman, URW Bookman L, serif;
+  
+  }
+  
+  button {
+    background: #f76c6c;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Bookman, URW Bookman L, serif;
+  }
+
+  .cart {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+
+  .products-title{
+    text-align: center;
+    font-family: Bookman, URW Bookman L, serif;
+    font-size: 100px;
+    color: #ee5252;
+  
+  
+  }
+
+  .product button {
+    margin-top: auto;
+  }
+
+  .product img{
+    height: 240px;
+    border-radius: 10px;
+  }
+  
+  .product h2{
+    margin: 0px;
+    margin-top: 10px;
+    background-color: #ffb6b9;
+    border-radius: 10px;
+  }
+
+  /* Навигационные кнопки */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background: #f76c6c;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 1.05rem;
+  font-family: Bookman, URW Bookman L, serif;
+  transition: all 0.3s ease;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+nav a:hover,
+nav a:active {
+  background: linear-gradient(0deg, #ffc5d0 0%, #ffb6c1 100%);
+}
+
+/* Кнопки "Додати до кошика" */
+button {
+  background: #f76c6c;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Bookman, URW Bookman L, serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+button:hover,
+button:active {
+  background: linear-gradient(0deg, #ffc5d0 0%, #f7788b 100%);
+}
+
+footer a:hover {
+  background-color: #fca8a8; /* Светлый розовый эффект */
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
